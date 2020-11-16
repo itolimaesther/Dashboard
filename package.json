@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^1.9.6",
+    "tailwindcss-multi-theme": "^1.0.4"
+  },
+  "devDependencies": {
+    "tailwindcss-inset": "^1.0.0",
+    "tailwindcss-pseudo-elements": "^1.4.1"
+  },
+  "scripts": {
+    "build-css": "tailwind build src/styles.css -o public/assets/css/styles.css",
+    "watch-css": "tailwind build src/styles.css -o public/assets/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

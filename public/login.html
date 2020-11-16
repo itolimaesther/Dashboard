@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/init-alpine.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="form-wrap dark:bg-gray-900">
+      <div
+        class="signup-form-container dark:bg-gray-800"
+      >
+        <div class="flex flex-col overflow-y-auto md:flex-row">
+          
+          <div class="form-image-section h-64 md:h-auto md:w-1/2 object-center object-cover" style="background-image: url(./assets/img/create-account-office.jpeg);">
+            <span id="blackOverlay" class="w-full h-full relative bg-blue-900 bg-opacity-75"></span>
+            <div class="absolute mt-2 sm:mt-4 ml:0 sm:-ml-64">
+              <svg class="w-8 sm:w-full" width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M40 34.641L20 0L0 34.641L25.4761 34.641L19.9304 24.2984L23.6428 17.8741L32.901 34.641L40 34.641Z" fill="white"/>
+              </svg>
+            </div>
+              
+            <div class="text-wrapper text-white mx-auto mt-20 sm:mt-56 px-8 sm:px-1">
+              <h2 class="font-bold leading-10">Welcome to Autocommision Jacker</h2>
+              <p class="w-64">Sign in to your individual account to continue.</p>
+            </div>
+          </div>
+          <div class="form-wrapper pt-0 sm:p-12 md:w-1/2">
+            <div class="w-full">
+              <h1
+                class="form-heading-primary dark:text-gray-200"
+              >
+                Sign in
+              </h1>
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Email</span>
+                <input
+                  class="search-input form-input dark:border-gray-600 dark:bg-gray-700 form-input"
+                  placeholder="you@example.com"
+                />
+              </label>
+              <label class="block mt-4 text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Password</span>
+                <input
+                  class="search-input form-input dark:border-gray-600 dark:bg-gray-700 form-input"
+                  placeholder="Enter your password"
+                  type="password"
+                />
+              </label>
+
+              <button
+                class="signin-btn"
+              >
+                Login
+            </button>
+
+
+              <p class="mt-4">
+                <a
+                  class="forget-link dark:text-blue-400"
+                  href="#"
+                >
+                  Forgot your password?
+                </a>
+              </p>
+              <p class="mt-1">
+                Don't have an account?
+                <a
+                  class="signup-link signin-link dark:text-blue-400"
+                  href="./sign-up.html"
+                >
+                  sign up
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
